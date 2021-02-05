@@ -1,0 +1,15 @@
+numero = int(input("Quantos termos você quer ?: "))
+termo1 = 0
+termo2 = 1
+count = 3
+
+print("{} -> {}".format(termo1, termo2), end = '')
+
+while count <= numero:
+    termo3 = termo1 + termo2
+    print("-> {}".format(termo3), end = '')
+    termo1 = termo2
+    termo2 = termo3
+    count += 1 
+
+print(" -> Fim !!!")
